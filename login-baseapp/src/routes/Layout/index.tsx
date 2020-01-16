@@ -51,7 +51,7 @@ const CHECK_INTERVAL = 15000;
 const STORE_KEY = 'lastAction';
 
 //tslint:disable-next-line no-any
-const PrivateRoute: React.FunctionComponent<any> = ({ component: CustomComponent, loading, isLogged, ...rest }) => {
+export const PrivateRoute: React.FunctionComponent<any> = ({ component: CustomComponent, loading, isLogged, ...rest }) => {
     if (loading) {
         return renderLoader();
     }
